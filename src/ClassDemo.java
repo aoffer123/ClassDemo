@@ -21,7 +21,7 @@ public class ClassDemo {
             case "kg":
                 switch (targetMetric) {
                     case "lb":
-                        targetNum = sourceNum * 2;
+                        targetNum = sourceNum * (float) 2.2046;
                         break;
                     case "gram":
                         targetNum = sourceNum / (float) 0.0010000;
