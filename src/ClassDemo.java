@@ -17,7 +17,8 @@ public class ClassDemo {
                         System.out.println("Your input is not handled, please try again.");
                         return targetNum;
                 }
-                case "kg":
+            break;
+            case "kg":
                 switch (targetMetric) {
                     case "lb":
                         targetNum = sourceNum * 2;
@@ -33,9 +34,9 @@ public class ClassDemo {
                         break;
                     default:
                         System.out.println("Your input is not handled, please try again.");
-                        return targetNum;
                 }
-                case "mm":
+            break;
+             case "mm":
                 switch (targetMetric) {
                     case "in":
                         targetNum = sourceNum * (float) 0.039370;
@@ -47,7 +48,8 @@ public class ClassDemo {
                         System.out.println("Your input is not handled, please try again.");
                         return targetNum;
                 }
-            case "ton":
+            break;
+             case "ton":
                 switch (targetMetric) {
                     case "lb":
                         targetNum = sourceNum * (float) 2204.6;
@@ -61,10 +63,9 @@ public class ClassDemo {
 
                 }
         }
-        System.out.printf("%.2f %s = %.2f %s%n", sourceNum, sourceMetric, targetNum, targetMetric);
-        return targetNum;
+    System.out.printf("%.2f %s = %.2f %s%n", sourceNum, sourceMetric, targetNum, targetMetric);
+    return targetNum;
     }
-
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         String str;
